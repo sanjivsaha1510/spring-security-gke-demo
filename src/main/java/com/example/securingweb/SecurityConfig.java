@@ -87,6 +87,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/public/**", "/error").permitAll()
                         .requestMatchers("/h2-console/**").permitAll()
+                        .requestMatchers("/actuator/health", "/actuator/health/**").permitAll()
                         //.requestMatchers("/admin/**").hasRole("ADMIN")   // checks authority ROLE_ADMIN
                         .anyRequest().authenticated())
                 .formLogin(Customizer.withDefaults())

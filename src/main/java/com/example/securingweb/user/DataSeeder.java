@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /**
  * Demo convenience only. A real app would use Flyway or Liquibase.
  */
-@Component
+/*@Component
 public class DataSeeder implements CommandLineRunner {
 
     private final UserRepository repository;
@@ -44,3 +44,4 @@ public class DataSeeder implements CommandLineRunner {
                         + " " + u.getPassword()));
     }
 }
+*/
